@@ -46,3 +46,12 @@ Fernando, he tenido un problema y es que no se me han ido subiendo los commits q
 
 Al revisar de nuevo la práctica de DNS, he visto que ponía que era necesario tener un bootstrap.sh, que ejecutara la máquina, en este caso es con docker por tanto solo necesito tener el comando de `docker compose up -d` y el resto se puedo borrar o dejarlo comentado.
 ![VagrantFile](img/bootstrap_docker.png)
+
+También he visto necesario pasar un archivo más de configuración para incluir las configuraciones anteriores, que es `named.conf`
+![VagrantFile](img/named_conf.png)
+
+Y por último esto, lo he tenido que añadir al archivo `docker-compose.yml` para que el contenedor lo tenga en cuenta a la hora de montarlo.
+![VagrantFile](img/docker-compose-yml_nuevo.png)
+
+Volvemos a realizar las comprobaciones y vemos que todo está funcionando correctamente.
+![VagrantFile](img/docker-compose-ps_nuevo.png)
