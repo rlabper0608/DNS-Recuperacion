@@ -12,7 +12,7 @@ Por tanto para esta práctica me he pasado los archivos pertinentes.
  - config/named.conf.options
 ![VagrantFile](img/options.png)
  - config/named.conf.local
-![VagrantFile](img/local)
+![VagrantFile](img/local.png)
  - zones/raul.test.dns
 ![VagrantFile](img/test-dns.png)
  - zones/raul.test.rev
