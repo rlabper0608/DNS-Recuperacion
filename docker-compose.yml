@@ -1,5 +1,4 @@
 version: '3.8'
-
 services:
   dns_server:
     image: ubuntu/bind9:9.16-20.04_beta
@@ -11,3 +10,5 @@ services:
     volumes:
       - ./config/named.conf.local:/etc/bind/named.conf.local:ro
       - ./zones:/var/lib/bind:ro
+      - ./config/named.conf:/etc/default/named.conf:ro
+

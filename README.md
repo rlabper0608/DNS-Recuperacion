@@ -43,3 +43,6 @@ Y ahora al hacer el ping con nslookup, podemos ver que nos devuelve la IP correc
 
 Fernando, he tenido un problema y es que no se me han ido subiendo los commits que he ido haciendo del trabajo, en el repositorio solo sale uno pero tengo varios:
 ![VagrantFile](img/commits.png)
+
+Al revisar de nuevo la práctica de DNS, he visto que ponía que era necesario tener un bootstrap.sh, que ejecutara la máquina, en este caso es con docker por tanto solo necesito tener el comando de `docker compose up -d` y el resto se puedo borrar o dejarlo comentado.
+![VagrantFile](img/bootstrap_docker.png)
